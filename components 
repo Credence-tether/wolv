@@ -1,0 +1,98 @@
+import Link from 'next/link';
+
+export default function Navbar() {
+      return (
+            <nav style></nav>={{ padding: 20, background: '#111', color: '#fff' }}>
+                  <Link href="/">Home</Link> | <Link href="/about">About</Link> | <Link href="/plans">Plans</Link> | 
+                        <Link href="/cannabis">Cannabis</Link> | <Link href="/loans">Loans</Link> | 
+                              <Link href="/dashboard">Dashboard</Link> | <Link href="/contact">Contact</Link> | 
+                                    <Link href="/auth/signin">Sign In</Link>
+                                        </nav>
+      
+
+    
+import Navbar from './Na
+
+export defaut function Layout({ children }) {
+      return (
+            <div>
+                      <Navbar />
+                            <main st{ padding: 20 }}>{children}</main>
+            </div>
+              
+import Layout from '../components/Layout';
+
+export default function Home() {
+        return (
+                <Layout>
+                        <h1>Welcome to wolv-invest</h1>
+                              <p>Earn 2-5% ROI daily for 7 days. Withdraw capital after 20 days.</p>
+                </Layout>
+        );
+        }import Layout from '../components/Layout';
+
+        export default function About() {
+              return (
+                      <Layout>
+                              <h1>About Us</h1>
+                                    <p>wolv-invest is a crypto and cannabis investment platform with automated user and admin dashboards.</p>
+                                     t>
+              );
+              }import Layout from '../components/Layout';
+
+              export defunction Plans() <Layout>
+                        <h11>Investment 
+                                      <li>Basic Plan: $200  $999</li>
+                                              <li>Amateur Plan: $1,000  $1,999</li>
+                                                      <li>Retirement Plan: Details on request</li>
+                                                              <li>VIP Plan: Premium offerings</li>
+                        </ul>
+                  </Layout>
+      );
+            }import Layout from '../components/Layout';
+
+            export default function Cannabis() {
+                    return (
+                            <Layout>
+                                    <h1>Cannabis Investment</h1>
+                                          <p>Explore our growing cannabis investment opportunity with solid ROI potential.
+                                          </Layout>
+                    );
+                    }import Layout '../components/Layout';
+
+                    export default function Loans() {
+                          return (
+                                  
+                                        <h1>Loan Services</h1>
+                                              <p>Access loan services tailored to your investment profile.</p>
+                    </Layout>
+                          );
+                  }
+                       import Layout from '../components/Layout';
+                       
+                       export default function Dashboard() {
+                          return (
+                                  <Layout>
+                                          <h1>User Dashboard (Coming Soon)</h1>
+                                                <p>Track your investments and ROI here. Login required.</  );
+                                                      }import Layout from '../components/Layout';
+
+                                                      export defaulnction Contact() {
+                                                              return (
+                                                                      <Layout>
+                                                                              <h1>Contact Us</h1>
+                                                                                    <p>Email: upport@wolv-invest.com</p>
+                                                                      </Layout>
+                                                              );
+                                                                  }
+                                                              )
+                                                      }
+                          )
+                       }   )
+                    }
+                    )
+            }
+              )
+        }
+        )
+}
