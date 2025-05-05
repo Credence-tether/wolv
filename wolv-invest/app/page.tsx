@@ -174,5 +174,26 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+}{/* Testimonials Section */}
+<section className="w-full max-w-5xl mt-16">
+  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8">
+    What Our Clients Say
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <div className="p-6 bg-white shadow-md rounded-lg">
+      <p className="text-gray-600 italic">
+        "Wolv Invest helped me grow my portfolio by 30% in just one year. Their
+        platform is intuitive and easy to use!"
+      </p>
+      <p className="mt-4 text-gray-800 font-semibold">- Jane Doe</p>
+    </div>
+    <div className="p-6 bg-white shadow-md rounded-lg">
+      <p className="text-gray-600 italic">
+        "The loan process was seamless and transparent. I highly recommend Wolv
+        Invest for anyone looking for financial solutions."
+      </p>
+      <p className="mt-4 text-gray-800 font-semibold">- John Smith</p>
+    </div>
+  </div>
+</section>
 
