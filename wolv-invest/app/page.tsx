@@ -99,6 +99,8 @@
     </div>
 import Image from "next/image";
 
+// Removed duplicate import of Image
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-between p-8 sm:p-16 bg-gray-50">
@@ -196,4 +198,21 @@ export default function Home() {
     </div>
   </div>
 </section>
+{/* Call-to-Action Section */}
+<section className="w-full max-w-5xl mt-16 text-center">
+  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+    Ready to Get Started?
+  </h2>
+  <p className="text-gray-600 mb-8">
+    Join thousands of satisfied clients and take control of your financial
+    future today.
+  </p>
+  <a
+    href="/auth/signin"
+    className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"
+  >
+    Get Started
+  </a>
+</section>
 
+// Removed duplicate export default function Home
