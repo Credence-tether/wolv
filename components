@@ -1,0 +1,113 @@
+import Link from 'next/link';
+
+export default function Navbar() {
+  return (
+    <nav style={{ padding: 20, background: '#111', color: '#fff' }}>
+      <Link href="/">Home</Link> | <Link href="/about">About</Link> | <Link href="/plans">Plans</Link> | 
+      <Link href="/cannabis">Cannabis</Link> | <Link href="/loans">Loans</Link> | 
+      <Link href="/dashboard">Dashboard</Link> | <Link href="/contact">Contact</Link> | 
+      <Link href="/auth/signin">Sign In</Link>
+    </nav>
+  );
+}
+
+// Layout Component
+import Navbar from './Navbar';
+
+export default function Layout({ children }) {
+  return (
+    <div>
+      <Navbar />
+      <main style={{ padding: 20 }}>{children}</main>
+    </div>
+  );
+}
+
+// Home Component
+import Layout from '../components/Layout';
+
+export default function Home() {
+  return (
+    <Layout>
+      <h1>Welcome to wolv-invest</h1>
+      <p>Earn 2-5% ROI daily for 7 days. Withdraw capital after 20 days.</p>
+    </Layout>
+  );
+}
+
+// About Component
+import Layout from '../components/Layout';
+
+export default function About() {
+  return (
+    <Layout>
+      <h1>About Us</h1>
+      <p>wolv-invest is a crypto and cannabis investment platform with automated user and admin dashboards.</p>
+    </Layout>
+  );
+}
+
+// Plans Component
+import Layout from '../components/Layout';
+
+export default function Plans() {
+  return (
+    <Layout>
+      <h1>Investment Plans</h1>
+      <ul>
+        <li>Basic Plan: $200 - $999</li>
+        <li>Amateur Plan: $1,000 - $1,999</li>
+        <li>Retirement Plan: Details on request</li>
+        <li>VIP Plan: Premium offerings</li>
+      </ul>
+    </Layout>
+  );
+}
+
+// Cannabis Component
+import Layout from '../components/Layout';
+
+export default function Cannabis() {
+  return (
+    <Layout>
+      <h1>Cannabis Investment</h1>
+      <p>Explore our growing cannabis investment opportunity with solid ROI potential.</p>
+    </Layout>
+  );
+}
+
+// Loans Component
+import Layout from '../components/Layout';
+
+export default function Loans() {
+  return (
+    <Layout>
+      <h1>Loan Services</h1>
+      <p>Access loan services tailored to your investment profile.</p>
+    </Layout>
+  );
+}
+
+// Dashboard Component
+import Layout from '../components/Layout';
+
+export default function Dashboard() {
+  return (
+    <Layout>
+      <h1>User Dashboard (Coming Soon)</h1>
+      <p>Track your investments and ROI here. Login required.</p>
+    </Layout>
+  );
+}
+
+// Contact Component
+import Layout from '../components/Layout';
+
+export default function Contact() {
+  return (
+    <Layout>
+      <h1>Contact Us</h1>
+      <p>Email: support@wolv-invest.com</p>
+    </Layout>
+  );
+}
