@@ -1,5 +1,5 @@
-export default function Home() {
-  return (
+
+  
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
@@ -97,6 +97,82 @@ export default function Home() {
         </a>
       </footer>
     </div>
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-between p-8 sm:p-16 bg-gray-50">
+      {/* Hero Section */}
+      <header className="text-center py-16">
+        <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 mb-4">
+          Welcome to Wolv Invest
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-600">
+          Your trusted partner in investment and financial growth.
+        </p>
+        <div className="mt-8">
+          <a
+            href="/about"
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"
+          >
+            Learn More
+          </a>
+        </div>
+      </header>
+
+      {/* Features Section */}
+      <main className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full max-w-5xl">
+        <div className="flex flex-col items-center text-center p-6 bg-white shadow-md rounded-lg">
+          <Image
+            src="/icons/investment.svg"
+            alt="Investment Icon"
+            width={64}
+            height={64}
+          />
+          <h2 className="text-xl font-semibold text-gray-800 mt-4">
+            Smart Investments
+          </h2>
+          <p className="text-gray-600 mt-2">
+            Explore tailored investment plans to grow your wealth.
+          </p>
+        </div>
+        <div className="flex flex-col items-center text-center p-6 bg-white shadow-md rounded-lg">
+          <Image
+            src="/icons/loans.svg"
+            alt="Loans Icon"
+            width={64}
+            height={64}
+          />
+          <h2 className="text-xl font-semibold text-gray-800 mt-4">
+            Flexible Loans
+          </h2>
+          <p className="text-gray-600 mt-2">
+            Access loans with competitive rates and flexible terms.
+          </p>
+        </div>
+        <div className="flex flex-col items-center text-center p-6 bg-white shadow-md rounded-lg">
+          <Image
+            src="/icons/dashboard.svg"
+            alt="Dashboard Icon"
+            width={64}
+            height={64}
+          />
+          <h2 className="text-xl font-semibold text-gray-800 mt-4">
+            Intuitive Dashboard
+          </h2>
+          <p className="text-gray-600 mt-2">
+            Manage your investments and loans with ease.
+          </p>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="w-full text-center py-8 border-t mt-16">
+        <p className="text-gray-600">
+          © {new Date().getFullYear()} Wolv Invest. All rights reserved.
+        </p>
+      </footer>
+    </div>
   );
-}import Image from "next/image";
+}
 
